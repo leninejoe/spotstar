@@ -1,0 +1,571 @@
+
+
+                    /* Styling for starting pages { LogIn, SignUp, forgot pswd, verify otp, New paswd, Home } */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+}
+
+
+
+/* Navbar */
+
+#N-head{
+    position: fixed;
+}
+#Navbar{
+    /* background-color:#7062e900; */
+    text-align: center;
+    margin-right: 20px;
+    margin-left: 1080px;
+    height: 0px;
+    width: auto;
+    height: 40px;
+}
+#N-td1{
+    width: 97px;
+    border-radius: 20px;
+}
+#N-td2{
+    width: 130px;
+    /* background: transparent;
+    backdrop-filter: blur(10px); */
+}
+#N-title{
+    font-size: 20px;
+    text-align: center;
+    margin: 15px;
+}
+.N-option{
+    /* font-size: 18px; */
+    color: rgb(255, 255, 255);
+}
+#N-button1{
+    width: 95px;
+    height: 35px;
+    background-color: rgba(255, 255, 255, 0);
+    border-top-Right-radius:  20px;
+    border-bottom-left-radius:  20px;
+    color: black;
+    font-weight: 900;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    transition: 0.5s;
+
+}
+#N-button1:hover{
+    cursor: pointer;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.8s;
+    font-weight:600;
+    transition: 0.5s;
+}
+
+#N_H_Button{
+    width: 95px;
+    height: 35px;
+    background-color: rgba(255, 255, 255, 0);
+    border-top-Right-radius:  20px;
+    border-bottom-left-radius:  20px;
+    color: white;
+    margin-top: 20px;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+#N_H_Button:hover{
+    cursor: pointer;
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+    transition: all 0.8s;
+    font-weight:600;
+    transition: 0.5s;
+}
+
+/*  */
+
+:root{
+    --primary-color: #6657f4;
+    --second-color: #ffffff; 
+    --black-color: #000000;
+}
+
+body{
+    
+    background: #9a90f5;
+}
+
+
+a{
+    text-decoration: none;
+    color: var(--second-color);
+    transition: 0.5s;
+}
+a:hover{
+    text-decoration: underline;
+    transition: 0.5s;
+
+}
+
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 79.2vh;
+    /* background-color: rgba(0,0,0,0.2); */
+}
+
+#head{
+    height: 100PX;
+    width: auto;
+    background-color: #675dc4;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#wel{
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 550;
+    color: rgb(243, 242, 242);
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 20px;
+    text-shadow: rgb(0, 0, 0) 3px 1px ;
+}
+
+#top{
+    margin-left: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2px;
+}
+.name{
+    margin-left: 0px;
+    margin-top: 10px;
+    padding:2px;
+    border-radius: 20px;
+    background-color: #5b52afa8;
+    font-size: 50px;
+    text-decoration: underline 3px double rgb(45, 44, 44);
+    text-shadow: rgba(0, 0, 0, 0.463) 4px 2px ;
+}
+
+
+
+.login-box{
+    margin-top: 130px;
+    position: relative;
+    width: 450px;
+    border: 3px solid var(--primary-color);
+    border-radius: 15px;
+    padding: 7.5em 2.5em 4em 2.5em;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.3);
+}
+
+
+
+.Verify-box{
+    margin-top: 100px;
+    position: relative;
+    width: 450px;
+    height: 390px;
+    border: 3px solid var(--primary-color);
+    border-radius: 15px;
+    padding: 7.5em 2.5em 4em 2.5em;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.3);
+}
+
+.SignUp-box{
+    position: relative;
+    width: 450px;
+    height: 700px;
+    border: 3px solid var(--primary-color);
+    border-radius: 15px;
+    margin-top: 15px;
+    padding: 7.5em 2.5em 4em 2.5em;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.3);
+}
+
+.login-header{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:var(--primary-color);
+    width: 280px;
+    height: 70px;
+    border-radius: 0 0 20px 20px ;
+}
+
+.login-header span {
+    font-size: 30px;
+    color: var(--black-color);
+}
+
+.login-header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -30px; 
+    width: 30px;
+    height: 30px;
+    border-top-right-radius: 50%;
+    background: transparent;
+    box-shadow: 15px 0 0 0 var(--primary-color);
+}
+
+.login-header::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -30px; 
+    width: 30px;
+    height: 30px;
+    border-top-left-radius: 50%;
+    background: transparent;
+    box-shadow: -15px 0 0 0 var(--primary-color);
+}
+
+.input_box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.login_input_box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.home_input_box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+
+.SignUp_input_box{
+    position: relative;
+    padding-top: 3px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.img_border{
+    border-radius: 35px;
+    transition: 1s;
+}
+
+.img_border:hover{
+    border: white 5px solid;
+    border-radius: 35px;
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+.vs_img{
+    border-radius: 200000000px;
+    transition: all 1s;
+}
+
+.vs_img:hover{
+    transition: all 0.5s;
+    transform: rotateY(360deg);
+}
+
+
+
+
+.input-field{
+    width: 100%;
+    height: 55px;
+    font-size: 16px;
+    background: transparent;
+    color: #000000;
+    padding-inline: 20px 50px;
+    border: 2px solid var(--primary-color);
+    border-radius: 30px;
+    outline: none;
+}
+
+#user{
+    margin-bottom: 10px;
+}
+
+.label{
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    transition: .2s ease-in-out;
+    cursor: text;
+}
+
+.Signup_label{
+    position: absolute;
+    top: 19px;
+    left: 135px;
+    align-items: center;
+}
+
+.input-field:focus ~ .label,
+.input-field:valid ~ .label{
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    font-size: 14px;
+    background-color: var(--primary-color);
+    border-radius: 30px;
+    color: black;
+    padding: 0 10px;
+
+}
+
+.icon{
+    position: absolute;
+    top: 18px;
+    right: 25px;
+    font-size: 20px;
+}
+
+
+.remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+.input-submit{
+    width: 100%;
+    height: 50px;
+    background: #6657f4;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+
+.input-submit_home{
+    width: 100%;
+    height: 50px;
+    background: #e8e8ea;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    transition: 1s;
+}
+
+.input-submit_home:hover{
+    font-size: 25px;
+    background-color: #000000;
+    color: white;
+    letter-spacing: 5px;
+    transition: 1s;
+}
+.input-submit:hover{
+    background: #1d0db2;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+    letter-spacing: 2px ;
+    transition: 1s;
+}
+
+.register{
+    text-align: center;
+}
+
+.register a{
+    font-weight: 500;
+}
+
+a{
+    color: #6657f4;
+}
+
+audio{
+    width: 400px;
+    height: 50px;
+    border: rgb(123, 11, 69) 5px double;
+    border-radius: 25px;
+}
+#footer{
+    height: 50px;
+    width: 100%;
+    background-color: #675dc4;
+}
+#f-td{
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+@media only screen and (max-width: 564px) {
+    .wrapper{
+        padding: 20px;
+    }
+    .login-box{
+        padding: 7.5em 1.5em 4em 2.5em;
+    }
+}
+
+
+                    /* ABOUT PAGE */
+
+
+#logo{
+    height: 75px;
+    width: 300px;
+    margin-left: 5px;
+    top: 2%;
+    left: 1%;
+    background:transparent;
+    position: absolute;
+}
+
+.A-name{
+    margin-left: 0px;
+    margin-top: px;
+    padding:2px;
+    border-radius: 20px;
+    background-color: #5b52afa8;
+    font-size: 50px;
+    font-weight: 600;
+    text-decoration: underline 3px double rgb(45, 44, 44);
+    text-shadow: rgba(0, 0, 0, 0.463) 4px 2px ;
+}
+
+
+#h3{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 30px;
+}
+
+#Intro{
+    text-align: justify;
+    font-size: 25px;
+    margin-top: 50px;
+    padding: 15px;
+}
+
+#h2{
+    margin-top: 50px;
+    margin-left: 25px;
+    font-size: 23px;
+    text-decoration: underline rgb(62, 61, 61) double;
+}
+
+.A-con{
+    text-align: justify;
+}
+
+li{
+    margin: 30px;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+                        /* Contact */
+
+
+#C-logo{
+    height: 70px;
+    width: 300px;
+    margin-left: 5px;
+    top: 3%;
+    left: 40%;
+    border-bottom: #000000 4px double;
+    background:transparent;
+    position: absolute;
+}
+
+.Contact-head{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:var(--primary-color);
+    width: 280px;
+    height: 70px;
+    border-radius: 0 0 20px 20px ;
+}
+
+.Contact-head span {
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--black-color);
+}
+
+
+.C-con{
+    text-align: center;
+    padding-top: 30px;
+}
+
+.C-con span{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+#C-p{
+    margin-top: 20px;
+    color: rgba(140, 136, 136, 0.738);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.app{
+    font-size: 40px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.app:hover{
+    transform: scale(1.1);
+    text-shadow: lightgrey 5px 2px ;
+}
+
+#C-footer{
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    top: 93%;
+    background-color: #675dc4;
+}

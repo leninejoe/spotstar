@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotstar Movie-Tamil</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/HTML/style.css">
+    <link rel="stylesheet" href="/HTML/Movies-HTML/Tamil/Movie_style.css">
+    <script src="/JS/Movie.js"></script>
+    <script src="/JS/lazyload.js"></script>
+</head>
+<body>
+<div id="whole_body">
+    <div id="head">
+        <!-- Navbar -->
+        <div id="N-head">
+            <table id="Navbar">
+                <tr>
+                    <!-- <td id="N-td1"><p id="N-title"></p></td> -->
+                    <td id="N-td2"><a href="/HTML/Home.html" class="N-option"><button id="N-button1">HOME</button></a></td>
+                    <td id="N-td2"><a href="/HTML/Music-HTML/Music_Home.html" class="N-option"><button id="N-button1">MUSIC</button></a></td>
+                    <td id="N-td2"><a href="/HTML/About.html" class="N-option"><button id="N-button1">ABOUT</button></a></td>
+                    <td id="N-td2"><a href="/HTML/Contact.html" class="N-option"><button id="N-button1">CONTACT</button></a></td>
+                </tr>
+            </table>
+        </div>
+        <table id="top">
+            <tr>
+                <td><img id="logo" src="/Image/Latest_logo1.png" alt="">
+                    <i class="fa-solid fa-magnifying-glass fa-xl"></i></td>
+                <!-- <th class="music_align"><a class="music" href="/HTML/Music-HTML/Music_Home.html">Spot Music</a></th> -->
+                <th><h4 class="name">Star&nbsp;Movies</h4></th>
+                <td><select name="" id="select">
+                    <option value="EM">Choose Lang..</option>
+                    <option value="TN">Tamil</option>
+                    <option value="KL">Malayalam</option>
+                    <option value="AP">Telungu</option>
+                    <option value="KA">Kanada</option>
+                </select>
+                <button id="S-Button" onclick="language()">GO</button>
+            </td>
+                <td><input type="text" placeholder="Search" id="search"></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="image_slideshow">
+        <div id="slideshow-container1">
+            <img id="image" class="slideshow lazy" src="./CSK.jpg" alt="Slideshow Image">
+        </div>
+        <div id="slideshow-container">
+                <img id="image2" class="slideshow2 lazy" src="./MI.jpg" alt="Slideshow Image">
+        </div>
+    </div>
+    
+    <div id="body">
+        <table>
+            <tr>
+                <th id="Sub_title">Latest Release</th>
+            </tr>
+            <tr>
+                <td id="dir"><a href="./Blue_Star_Movie.html" id="movie_In"><img id="movie" src="/Image/Movies/Blue star.jpg" alt="Blue star">Blue star</a></td>
+                <td id="dir"><a href="./Manjumel_Boys.html" id="movie_In"><img id="movie" src="/Image/Movies/Manjumel Boys movie.webp" alt="Manjumel Boys">Manjumel Boys</a></td>
+                <td id="dir"><a href="./Captian_Miller.html" id="movie_In"><img id="movie"src="/Image/Movies/captian miller.jpg" alt="Captian Miller">Captian Miller</a></td>
+            </tr>
+            <tr><td>&nbsp;  </td></tr>
+            <tr>
+                <td id="dir"><a href="./Vadakupatty_Ramasamy.html" id="movie_In"><img id="movie" src="/Image/Movies/vadakupatty ramasamy.jpg" alt="Vadakupatty Ramasamy">Vadakupatty Ramasamy</a></td>
+                <td id="dir"><a href="./Japan.html" id="movie_In"><img id="movie"src="/Image/Movies/Japan.jpg" alt="Japan">Japan</a></td>
+                <td id="dir"><a href="./Ayalan.html" id="movie_In"><img id="movie"src="/Image/Movies/Ayalan.jpeg" alt="Ayalan">Ayalan</a></td>
+            </tr>
+            <tr>
+                <th id="Sub_title">Top Movies </th>
+            </tr>
+            <tr>
+                <td id="dir"><a href="./Jailer.html" id="movie_In"><img id="movie" src="/Image/Movies/Jailer.webp" alt="Jailer">Jailer</a></td>
+                <td id="dir"><a href="./Leo.html" id="movie_In"><img id="movie"src="/Image/Movies/leo.jpg" alt="Leo">Leo</a></td>
+                <td id="dir"><a href="./Good Night.html" id="movie_In"><img id="movie"src="/Image/Movies/good night.webp" alt="Good Night">Good Night</a></td>
+            </tr>
+            <tr><td>&nbsp;  </td></tr>
+            <tr>
+                <td id="dir"><a href="./Vikram.html" id="movie_In"><img id="movie" src="/Image/Movies/Vikram_movie.webp" alt="Vikram">Vikram</a></td>
+                <td id="dir"><a href="./Dada.html" id="movie_In"><img id="movie"src="/Image/Movies/dada.jpg" alt="DaDa">DaDa</a></td>
+                <td id="dir"><a href="./Mahaan.html" id="movie_In"><img id="movie"src="/Image/Movies/mahan.jpg" alt="Mahaan">Mahaan</a></td>
+            </tr>
+            <tr>
+                <th id="Sub_title">Director  &nbsp;Pickup</th>
+            </tr>
+            <tr>
+                <td id="dir"><a href="./Lokesh Movie.html" id="movie_In"><img id="movie" src="/Image/Movies/Lokesh.avif" alt="Lokesh Kanagaraj">Lokesh Kanagaraj</a></td>
+                <td id="dir"><a href="./GVM Movies.html" id="movie_In"><img id="movie" src="/Image/Movies/GVM1.avif" alt="Gautham Vasudhev Mannon">Gautham Vasudhev Mannon</a></td>
+                <td id="dir"><a href="./Manirathnam Movies.html" id="movie_In"><img id="movie" src="/Image/Movies/Mani rathnam.jpg" alt="Mani Rathnam">Mani Rathnam</a></td>
+            </tr>
+            <tr><td>&nbsp;  </td></tr>
+            <tr>
+                <td id="dir"><a href="./Vetrimaran Movies.html" id="movie_In"><img id="movie" src="/Image/Movies/vetrimaran.avif" alt="Vetriamran">Vetriamran</a></td>
+                <td id="dir"><a href="./Selvaragavan Movies.html" id="movie_In"><img id="movie" src="/Image/Movies/selvaragavan.jpg" alt="Selvaragavan">Selvaragavan</a></td>
+                <td id="dir"><a href="./Atlee Movies.html" id="movie_In"><img id="movie"src="/Image/Movies/Atlee.avif" alt="Atlee">Atlee</a></td>
+            </tr>
+            <tr>
+                <th id="Sub_title">Actor  &nbsp;Clashes</th>
+            </tr>
+            <tr>
+                <td id="dir"><a href="./Vijay Movies.html" id="movie_In"><img id="movie" src="/Image/Movies/Vijay.jpeg" alt="Vijay">Vijay</a></td>
+                <td id="dir"><a href="./Ajth Movie.html" id="movie_In"><img id="movie"src="/Image/Movies/Ajith.cms" alt="Ajith">Ajith</a></td>
+                <td id="dir"><a href="./Surya Movies.html" id="movie_In"><img id="movie"src="/Image/Movies/surya.jpg" alt="Surya">Surya</a></td>
+            </tr>
+            <tr><td>&nbsp;  </td></tr>
+            <tr>
+                <td id="dir"><a href="./Rajini Movies.html" id="movie_In"><img id="movie" src="/Image/Movies/Rajini.jpeg" alt="Rajini">Rajini</a></td>
+                <td id="dir"><a href="./Vikram Movies.html" id="movie_In"><img id="movie" src="/Image/Movies/Vikram.avif" alt="Vikram">Vikram</a></td>
+                <td id="dir"><a href="./Kamal Movies.html" id="movie_In"><img id="movie" src="/Image/Movies/Kamal.webp" alt="Kamalakasan">Kamalakasan</a></td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div id="footer">
+    <p id="f-td" colspan="4">&copy; 2024 Copyright : LENINE JOSEPH</p>
+</div>
+</body>
+</html>

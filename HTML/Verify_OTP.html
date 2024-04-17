@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OTP Verification</title>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="style.css">
+<script src="/JS/Verify_OTP.js"></script>
+<style>
+    #input_box1{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0;
+    }
+    #input_box2{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin: 25px 0;
+    }
+</style>
+</head>
+<body>
+<div class="wrapper">
+    <div>
+        <img id="C-logo" src="/Image/Latest_logo1.png" alt="">
+    </div>
+    <div class="Verify-box">
+        <div class="login-header">
+        <span>OTP Verification</span>
+        </div>
+        <div class="input_box">
+        <input type="number" id="otp" class="input-field" required>
+        <label for="user" class="label">Enter OTP</label>
+        </div>
+        <div id="input_box1">
+            <a href="#"><input type="submit" class="input-submit" value="Re-Send OTP" onclick="Resend()"></a>
+        </div>
+        <div id="input_box2">
+            <a href="#"><input type="submit" class="input-submit" value="Confirm OTP" onclick="Verify_OTP()"></a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

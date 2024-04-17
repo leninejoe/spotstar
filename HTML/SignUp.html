@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SpotStar - SighUp</title>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="style.css">
+<script src="/JS/script.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <div class="SignUp-box">
+        <div class="login-header">
+        <span>Register</span>
+        </div>
+        <div class="SignUp_input_box">
+        <input type="text" id="user" class="input-field" required>
+        <label for="user" class="label">Full Name</label>
+        <!-- <i class="bx bx-user icon"></i> -->
+        </div>
+        <div class="SignUp_input_box">
+        <input type="date" id="user"  class="input-field" required>
+        <label for="user" class="Signup_label">&nbsp;- D.O.B -</label>
+        <!-- <i class="bx bx-user icon"></i> -->
+        </div>
+        <div class="SignUp_input_box">
+        <input type="email" id="email" class="input-field" required>
+        <label for="user" class="label">Email</label>
+        <!-- <i class="bx bx-user icon"></i> -->
+        </div>
+        <div class="SignUp_input_box">
+        <input type="number" id="phone_no" class="input-field" required>
+        <label for="user" class="label">Phone Number</label>
+        <!-- <i class="bx bx-user icon"></i> -->
+        </div>
+
+        <div class="SignUp_input_box">
+        <input type="password" id="pass" class="input-field" required>
+        <label for="pass" class="label">Password</label>
+        <i class="bx bx-lock-alt icon"></i>
+        </div>
+        <div class="SignUp_input_box">
+        <input type="password" id="C-pass" class="input-field" required>
+        <label for="pass" class="label">Confirm Password</label>
+        <i class="bx bx-lock-alt icon"></i>
+        </div>
+        <div class="SignUp_input_box">
+        <a href="#"><input type="submit" class="input-submit" value="SignUp" onclick="signUp()"></a>
+        </div>
+        <div class="register">
+            <span>Already have an account ? <a href="./index.html">Login</a></span>
+        </div>
+    </div>
+</div>
+</body>
+</html>

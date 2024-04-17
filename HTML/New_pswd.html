@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>New Password</title>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="style.css">
+<script src="/JS/script.js"></script>
+<style>
+    #input_box1{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0;
+    }
+    #input_box2{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin: 25px 0;
+    }
+</style>
+</head>
+<body>
+<div class="wrapper">
+    <div>
+        <img id="C-logo" src="/Image/Latest_logo1.png" alt="">
+    </div>
+    <div class="Verify-box">
+        <div class="login-header">
+        <span>OTP Verification</span>
+        </div>
+        <div class="input_box">
+        <input type="password" id="F_pass" class="input-field" required>
+        <label for="user" class="label">New Password</label>
+        <i class="bx bx-lock-alt icon"></i>
+        </div>
+        <div class="input_box">
+        <input type="password" id="F_C-pass" class="input-field" required>
+        <label for="user" class="label">Confirm Password</label>
+        <i class="bx bx-lock-alt icon"></i>
+        </div>
+        <div id="input_box2">
+            <a href="#"><input type="submit" class="input-submit" value="Confirm" onclick="pass()"></a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
